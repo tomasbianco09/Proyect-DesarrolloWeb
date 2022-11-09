@@ -1,0 +1,13 @@
+/* MAPS */
+
+$mapRedes:(itemUno: rgb(33, 33, 248), itemDos:rgb(182, 182, 70), itemTres:rgb(216, 30, 30));
+
+@each $red, $color in $mapRedes {
+    .#{$red} {
+        color: $color;
+    }
+}
+
+
+$estilo:(color:rgb(255, 255, 255), posicion:center);
+

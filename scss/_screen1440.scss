@@ -1,0 +1,289 @@
+@media screen and (max-width: 1440px) {
+  /* Seccion Nav */
+  
+  header {
+    position: sticky;
+    top: 0%;
+    grid-area: nav;
+    z-index: 2;
+    
+  
+    
+  
+    .textos-header {
+      display: flex;
+      height: 500px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .headerDec {
+    width: 100%;
+    height: 700px;
+    background: #c2c5aa;
+    background: -webkit-linear-gradient(to right, hsla(67, 19%, 72%, 0.5), white), url(../img/fondo.jpg);
+    background: linear-gradient(to right, hsla(67, 19%, 72%, 0.5), white), url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  .textos-header {
+    h1 {
+      font-size: 50px;
+      color: black;
+      font-weight: bold;
+    }
+  
+    h2 {
+      font-size: 30px;
+      font-weight: 300;
+      color: black;
+    }
+  }
+  
+  .wave {
+    position: absolute;
+    // bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  nav {
+    width: 100%;
+    height: 80px;
+  }
+
+  .navLogo img {
+    margin: 25px 25px 25px 5px;
+    width: 70px;
+    height: 60px;
+  }
+
+  .btn {
+    background-color: white;
+    border: none;
+
+    &:hover {
+      background-color: #F1FFE7;
+      color: #000;
+    }
+  }
+  
+  /* Sobre Nosotros */
+
+  .sobreNosotros {
+    display: flex;
+  
+    .primerImg {
+      width: 20%;
+      height: 25%;
+      box-shadow: 0 0 5px grey;
+      margin: 20px 50px 0 0;
+    }
+  
+    .ask1{
+      text-align: left;
+      margin: 20px 50px 0 50px;
+      font-size: $tam-fuente-textosp;
+    }
+  
+    .segundaImg {
+      width: 20%;
+      height: 25%;
+      box-shadow: 0 0 5px grey;
+      margin: 20px 0 0 50px;
+    }
+  
+    .ask2{
+      text-align: left;
+      margin: 20px 50px 0 50px;
+      font-size: $tam-fuente-textosp;
+    }
+  
+  }
+
+  /* Nuestro producto */
+
+  .tituloNuestroP {
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    margin: 30px 0 30px 0;
+
+    h1 {
+      @include titulosh;
+      padding-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .carousel {
+    margin: 0px 25% 5px 25%;
+    width: 50%;
+    box-shadow: 0 0 10px #24303c;
+  }
+  
+  .productsImg {
+  
+    img {
+      width: 250px;
+      height: 250px;
+      transition: 0.4s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+   
+  }
+
+  /* Seccion servicios */
+
+  .serviciosTitulo {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0 30px 0;
+
+    h1 {
+      @include titulosh;
+    }
+  }
+
+  .serviciosItems h2 {
+    font-size: 30px;
+    text-align: justify;
+    margin: 0 0 20px 50px;
+  }
+
+  .serviciosMantenimiento {
+    display: flex;
+
+    a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    img {
+      width: 200px;
+      box-shadow: 0 0 5px grey;
+      margin: 0 200px 50px 50px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .serviciosAtencion {
+    display: flex;
+
+    img {
+      width: 220px;
+      height: 200px;
+      box-shadow: 0 0 5px grey;
+      margin: 0 200px 50px 120px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  /* Seccion de Ubicacion */
+
+  .ubicaacionTexts {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0 30px 0;
+  }
+
+  .ubicacionTexts {
+    h1 {
+      @include titulosh;
+      padding-top: 30px;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  .ubicacionMaps {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 0 20px grey;
+    width: 70%;
+    height: 90%;
+  }
+
+  /* Seccion de contacto */
+
+  .contenido-contact {
+    margin-left: 40px;
+    margin-right: 40px;
+  
+    h3 {
+      color: #c2c5aa;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    p {
+      color: #cccccc;
+    }
+  
+    img {
+      width: 50px;
+      padding: 5px;
+      border-radius: 50%;
+    }
+    .redes {
+      border-radius: 0;
+      width: 30px;
+    }
+  
+  }
+
+  .formContact {
+    width: 70%;
+    height: 90%;
+    background-color: #0c0c0c;
+    padding: 5px 60px 20px 60px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    color: white;
+  
+    h2 {
+      margin-bottom: 20px;
+      font-size: 25px;
+      text-align: center;
+      font-weight: bold;
+    }
+  
+    textarea {
+      max-height: 500px;
+      resize: none;
+    }
+  }
+}
